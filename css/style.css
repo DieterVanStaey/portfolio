@@ -1,0 +1,94 @@
+/* Color Theme Swatches in Hex */
+.logo1-1-hex { color: #0B1726; }
+.logo1-2-hex { color: #3E608C; }
+.logo1-3-hex { color: #6295D9; }
+.logo1-4-hex { color: #D2D9D8; }
+.logo1-5-hex { color: #0D0D0D; }
+
+/* Color Theme Swatches in RGBA */
+.logo1-1-rgba { color: rgba(11, 23, 38, 1); }
+.logo1-2-rgba { color: rgba(62, 96, 140, 1); }
+.logo1-3-rgba { color: rgba(98, 149, 217, 1); }
+.logo1-4-rgba { color: rgba(210, 217, 216, 1); }
+.logo1-5-rgba { color: rgba(13, 13, 13, 1); }
+
+/* Color Theme Swatches in HSLA */
+.logo1-1-hsla { color: hsla(213, 55, 9, 1); }
+.logo1-2-hsla { color: hsla(213, 38, 39, 1); }
+.logo1-3-hsla { color: hsla(214, 61, 61, 1); }
+.logo1-4-hsla { color: hsla(171, 8, 83, 1); }
+.logo1-5-hsla { color: hsla(0, 0, 5, 1); }
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #0B1726;
+    color:#D2D9D8;
+    margin:0;
+    padding:0;
+    font-family: 'Open Sans', sans-serif;
+
+}
+a{
+    font-family: 'Oswald', sans-serif;
+    color:#D2D9D8;
+    padding: 10px;
+}
+h1, h2, h3, h4{
+    font-family: 'Oswald', sans-serif;
+    color: #6295D9;
+}
+header{
+    background-image: url("../assets/code_review.jpeg");
+    height: 33vh;
+}
+nav{
+    background-color:#0D0D0D;
+    position:fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#headerTextContainer{
+    text-align: center;
+    padding-top:60px;
+}
+.menuDiv{
+    padding:10px;
+    
+}
+footer{
+    background-color:#0D0D0D;
+    text-align: center;
+    height:30px;
+    width: 100%;   
+}
+button,#submit{
+    /* box-shadow: 0px 1px 0px 0px #1c1b18; */
+	/* background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%); */
+	background-color:transparent;
+	border-radius:10px;
+	border:2px solid #D2D9D8;
+	display:inline-block;
+	cursor:pointer;
+	color:#D2D9D8;
+	font-size:14px;
+	/* font-weight:bold; */
+	padding:12px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+#section4{
+    width: 40%;
+    margin-left: auto;
+    margin-right:auto;
+}
+input, textarea{
+    width: 100%;
+}
+.title{
+    width:100%;
+    text-align: center;
+}
