@@ -19,6 +19,15 @@
 .logo1-4-hsla { color: hsla(171, 8, 83, 1); }
 .logo1-5-hsla { color: hsla(0, 0, 5, 1); }
 
+@font-face{
+    font-family: ubuntu;
+    src: url(../fonts/ubuntu/Ubuntu-Regular.ttf)
+}
+@font-face{
+    font-family:abel;
+    src: url(../fonts/abel/Abel-Regular.ttf)
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -27,17 +36,44 @@ body{
     color:#D2D9D8;
     margin:0;
     padding:0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'abel', sans-serif;
 
 }
 a{
-    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-family: 'ubuntu', sans-serif;
     color:#D2D9D8;
-    padding: 10px;
+    padding: 5px;
+    background-color: transparent;
 }
+.link{
+    padding-left:20px;
+    padding-right: 20px;
+}
+a:hover{
+    color:#3E608C;
+    background-color: transparent;
+}
+.sprite {
+    background-image: url(../assets/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+    background-size: cover;
+}
+.sprite-logo5 {
+    width: 200px;
+    height: 38px;
+    background-position: 0px -5px;
+}
+.sprite-logo5:hover {
+    width: 200px;
+    height: 38px;
+    background-position: 0px -44px;
+}
+
 h1, h2, h3, h4{
-    font-family: 'Oswald', sans-serif;
-    color: #6295D9;
+    font-family: 'ubuntu', sans-serif;
+    color: #D2D9D8;
 }
 header{
     background-image: url("../assets/code_review.jpeg");
@@ -47,6 +83,7 @@ nav{
     background-color:#0D0D0D;
     position:fixed;
     width: 100%;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -59,6 +96,7 @@ nav{
     padding:10px;
     
 }
+
 footer{
     background-color:#0D0D0D;
     text-align: center;
@@ -78,7 +116,22 @@ button,#submit{
 	/* font-weight:bold; */
 	padding:12px 16px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
+	/* text-shadow:0px 1px 0px #ffffff; */
+}
+button:hover,#submit:hover{
+    /* box-shadow: 0px 1px 0px 0px #1c1b18; */
+	/* background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%); */
+	background-color:transparent;
+	border-radius:10px;
+	border:2px solid #3E608C;
+	display:inline-block;
+	cursor:pointer;
+	color:#3E608C;
+	font-size:14px;
+	/* font-weight:bold; */
+	padding:12px 16px;
+	text-decoration:none;
+	/* text-shadow:0px 1px 0px #3E608C;; */
 }
 #section4{
     width: 40%;
@@ -91,4 +144,19 @@ input, textarea{
 .title{
     width:100%;
     text-align: center;
+}
+.blueText{
+    color: #3E608C;
+}
+input, textarea{
+    border-radius: 5px;
+    box-shadow: none;
+    border-style: none;
+}
+input{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.section{
+    padding-top: 35px;
 }

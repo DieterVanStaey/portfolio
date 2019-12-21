@@ -8,7 +8,9 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/1f7c61ab08.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/flickity.css" media="screen">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/flickity.pkgd.js"></script>
     <title>Dieter Van Staey</title>
 </head>
 
@@ -16,38 +18,48 @@
     <header>
         <nav>
             <div class="menuDiv">
-                <a href="#" id="menuLogo"><img src="./assets/logo5.png" alt="" srcset=""  height="30px"></a>
+                <a href="#" id="menuLogo">
+                    <i class="sprite sprite-logo5"></i>
+                    <!-- <a href="#" id="menuLogo"><img src="./assets/logo5.svg" alt="" srcset="" height="30px" width="200px"></a> -->
             </div>
             <div class="menuDiv">
                 <a href="https://github.com/DieterVanStaey" id="menuIcon" target="_blank"><i
                         class="fab fa-github fa-2x"></i></a>
             </div>
             <div class="menuDiv">
-                <a href="#section1" id="menuSection1">Home</a>
-                <a href="#section2" id="menuSection2">Work</a>
-                <a href="#section3" id="menuSection3">Resume</a>
-                <a href="#section4" id="menuSection4">Contact</a>
+                <a href="#section1" class="link" id="menuSection1">Home</a>
+                <a href="#section2" class="link" id="menuSection2">Work</a>
+                <a href="#section3" class="link" id="menuSection3">Resume</a>
+                <a href="#section4" class="link" id="menuSection4">Contact</a>
             </div>
         </nav>
         <div id="headerTextContainer">
-            <h1>Hi, my name is Dieter Van Staey</h1>
+            <h1>Hello, my name is <span class="blueText">Dieter</span></h1>
             <p>Take a look around and see my progress becoming a programmer</p>
             <a href="mailto:dieter.van.staey@gmail.com" target="_top"><button name="submit" type="submit">Get in
                     touch</button></a>
         </div>
     </header>
     <main>
-        <div id="section1">
+        <div class="section" id="section1">
             <h1 class="title">Home</h1>
             <p>Small introduction</p>
         </div>
         <hr>
-        <div id="section2">
+        <div class="section" id="section2">
             <h1 class="title">Work</h1>
+            <!-- Flickity HTML init -->
+            <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+            </div>
             <p>Hier komt Dieter's portfolio/resume</p>
         </div>
         <hr>
-        <div id="section3">
+        <div class="section" id="section3">
             <h1 class="title">Resume</h1>
             <h2>Aims</h2>
             <h2>Education</h2>
@@ -59,7 +71,7 @@
             <p>Hier komt Dieter's portfolio/resume</p>
         </div>
         <hr>
-        <div id="section4">
+        <div class="section" id="section4">
             <h1 class="title">Contact</h1>
             <form action="" method="get">
                 <label for="name">Name</label><br>
