@@ -6,77 +6,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/1f7c61ab08.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/flickity.css" media="screen">
+    <script src="./js/1f7c61ab08.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/flickity.min.css" media="screen">
+    <link rel="stylesheet" href="./css/w3.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/flickity.pkgd.js"></script>
+
+    <script src="./js/flickity.pkgd.min.js"></script>
     <title>Dieter Van Staey</title>
 </head>
 
 <body>
+
+    <!-- headersection -->
+
     <header>
         <nav>
             <div class="menuDiv">
                 <a href="#" id="menuLogo">
                     <i class="sprite sprite-logo5"></i>
-                    <!-- <a href="#" id="menuLogo"><img src="./assets/logo5.svg" alt="" srcset="" height="30px" width="200px"></a> -->
             </div>
             <div class="menuDiv">
                 <a href="https://github.com/DieterVanStaey" id="menuIcon" target="_blank"><i
                         class="fab fa-github fa-2x"></i></a>
             </div>
             <div class="menuDiv">
-                <a href="#section1" class="link" id="menuSection1">Home</a>
-                <a href="#section2" class="link" id="menuSection2">Work</a>
-                <a href="#section3" class="link" id="menuSection3">Resume</a>
-                <a href="#section4" class="link" id="menuSection4">Contact</a>
+                <a href="#" class="link" id="menuSection1"><span class="blueText">H</span>ome</a>
+                <a href="#section2" class="link" id="menuSection2"><span class="blueText">W</span>ork</a>
+                <a href="#section3" class="link" id="menuSection3"><span class="blueText">C</span>urriculum</a>
+                <a href="#section4" class="link" id="menuSection4"><span class="blueText">C</span>ontact</a>
             </div>
         </nav>
         <div id="headerTextContainer">
             <h1>Hello, my name is <span class="blueText">Dieter</span></h1>
-            <p>Take a look around and see my progress becoming a programmer</p>
-            <a href="mailto:dieter.van.staey@gmail.com" target="_top"><button name="submit" type="submit">Get in
-                    touch</button></a>
+            <p class="headtext">Take a look around and see my progress becoming a <span class="blueText">developer</span></p>
+            <p class="headtext"><a href="#section4"><button name="submit"
+                        type="submit" id="submit">Get connected</button></a></pclass="headtext">
+                <p class="headtext"><a href="#section2"><i class="fas fa-chevron-circle-down fa-2x"></i></a> </p>
         </div>
     </header>
     <main>
+
+        <!-- section1 -->
+
         <div class="section" id="section1">
-            <h1 class="title">Home</h1>
+
+            <!-- Flickity HTML init -->
+
+            <div class="main-carousel"
+                data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true, "autoPlay": 5000}'>
+                <div class="carousel-cell"><a href="https://dietervanstaey.github.io/rik-coppens/" target="_blank"
+                        class="carlink"><img src="./assets/coppens.png" alt="" srcset="" class="car"></a></div>
+                <div class="carousel-cell"><a href="https://dietervanstaey.github.io/surveyForm/" target="_blank"
+                        class="carlink"><img src="./assets/survey.png" alt="" srcset="" class="car"></a></div>
+                <div class="carousel-cell"><a href="https://dietervanstaey.github.io/landingPage/" target="_blank"
+                        class="carlink"><img src="./assets/landingpage.png" alt="" srcset="" class="car"></a></div>
+                <div class="carousel-cell"><a href="https://dietervanstaey.github.io/rik-coppens/" target="_blank"
+                        class="carlink"><img src="./assets/coppens.png" alt="" srcset="" class="car"></a></div>
+                <div class="carousel-cell"><a href="https://dietervanstaey.github.io/surveyForm/" target="_blank"
+                        class="carlink"><img src="./assets/survey.png" alt="" srcset="" class="car"></a></div>
+                <div class="carousel-cell"><a href="https://dietervanstaey.github.io/landingPage/" target="_blank"
+                        class="carlink"><img src="./assets/landingpage.png" alt="" srcset="" class="car"></a></div>
+            </div>
+
+        </div>
+
+        <!-- section2 -->
+
+        <div class="section" id="section2">
+            <h1 class="title">Work</h1>
             <p>Small introduction</p>
         </div>
         <hr>
-        <div class="section" id="section2">
-            <h1 class="title">Work</h1>
-            <!-- Flickity HTML init -->
-            <div class="carousel" data-flickity='{ "wrapAround": true }'>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-            </div>
-            <p>Hier komt Dieter's portfolio/resume</p>
-        </div>
-        <hr>
+
+        <!-- section3 -->
+
         <div class="section" id="section3">
-            <h1 class="title">Resume</h1>
-            <h2>Aims</h2>
-            <h2>Education</h2>
-            <h2>My personality</h2>
-            <h3>Strengths</h3>
-            <h3>Weaknesses</h3>
-            <h2>Competences</h2>
-            <h2>Personalia</h2>
-            <p>Hier komt Dieter's portfolio/resume</p>
+            <h1 class="title">Curriculum</h1>
+            <h2 class="title">Aims</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Praesent semper
+                feugiat nibh sed pulvinar proin gravida. Sit amet volutpat consequat mauris nunc congue. Faucibus a
+                pellentesque sit amet porttitor eget dolor morbi non. Sagittis id consectetur purus ut faucibus pulvinar
+                elementum integer. Sagittis eu volutpat odio facilisis mauris sit amet. Quam elementum pulvinar etiam
+                non quam lacus. Lectus sit amet est placerat in egestas erat imperdiet sed. Purus non enim praesent
+                elementum. Pulvinar mattis nunc sed blandit. Urna condimentum mattis pellentesque id nibh tortor.
+                Pulvinar mattis nunc sed blandit libero volutpat sed. Pulvinar sapien et ligula ullamcorper malesuada.
+                Nisl pretium fusce id velit ut tortor.
+
+                Mollis nunc sed id semper risus in hendrerit gravida rutrum. Fringilla phasellus faucibus scelerisque
+                eleifend. Id consectetur purus ut faucibus pulvinar elementum integer enim. Donec enim diam vulputate ut
+                pharetra sit. Venenatis lectus magna fringilla urna porttitor rhoncus dolor. Aliquet lectus proin nibh
+                nisl condimentum id. Faucibus ornare suspendisse sed nisi lacus sed. Praesent semper feugiat nibh sed
+                pulvinar. Velit egestas dui id ornare. Sit amet mattis vulputate enim. Diam phasellus vestibulum lorem
+                sed risus ultricies tristique. In ante metus dictum at tempor commodo ullamcorper a. Pulvinar neque
+                laoreet suspendisse interdum consectetur libero. Lacus laoreet non curabitur gravida arcu ac. Non
+                blandit massa enim nec dui nunc. Senectus et netus et malesuada.</p>
+            <h2 class="title">Education</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Risus ultricies tristique nulla aliquet enim tortor at auctor urna. Nulla aliquet
+                porttitor lacus luctus. Lectus urna duis convallis convallis tellus. Libero nunc consequat interdum
+                varius sit. Purus viverra accumsan in nisl. Hendrerit dolor magna eget est lorem ipsum dolor. Ultrices
+                gravida dictum fusce ut placerat orci nulla pellentesque dignissim. </p>
+            <div class="progressBarContainer">
+                <div class="w3-light-grey w3-round-xlarge">
+                    <div class="w3-container w3-blue w3-round-xlarge" style="width:25%">25%</div>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Risus ultricies tristique nulla aliquet enim tortor at auctor urna. Nulla aliquet
+                porttitor lacus luctus. Lectus urna duis convallis convallis tellus. Libero nunc consequat interdum
+                varius sit. Purus viverra accumsan in nisl. Hendrerit dolor magna eget est lorem ipsum dolor. Ultrices
+                gravida dictum fusce ut placerat orci nulla pellentesque dignissim. </p>
+            <div class="progressBarContainer">
+                <div class="w3-light-grey w3-round-xlarge">
+                    <div class="w3-container w3-blue w3-round-xlarge" style="width:40%">40%</div>
+                </div>
+            </div>
+            <h2 class="title">My personality</h2>
+            <div class="curriculumDivider">
+                <div class="curriculumFlex">
+                    <h3 class="title">Strengths</h3>
+                    <ul>
+                        <li>Idealistic</li>
+                        <li>Seek and Value Harmony</li>
+                        <li>Open-minded and flexible</li>
+                        <li>Creative</li>
+                        <li>Passionate and Energetic</li>
+                        <li>Dedicated and Hard-working</li>
+                    </ul>
+                </div>
+                <div class="curriculumFlex">
+                    <h3 class="title">Weaknesses</h3>
+                    <ul>
+                        <li>Too Idealistic</li>
+                        <li>Too Altruic</li>
+                        <li>Impractical</li>
+                        <li>Dislike Dealing with Data</li>
+                        <li>Take things Personally</li>
+                        <li>Difficult to get to know</li>
+                    </ul>
+                </div>
+            </div>
+            <h2 class="title">Competences</h2>
+            <p>Mollis nunc sed id semper risus in hendrerit gravida rutrum. Fringilla phasellus faucibus scelerisque
+                eleifend. Id consectetur purus ut faucibus pulvinar elementum integer enim. Donec enim diam vulputate ut
+                pharetra sit. Venenatis lectus magna fringilla urna porttitor rhoncus dolor. Aliquet lectus proin nibh
+                nisl condimentum id. </p>
+            <h2 class="title">Personalia</h2>
+            <p>Mollis nunc sed id semper risus in hendrerit gravida rutrum. Fringilla phasellus faucibus scelerisque
+                eleifend. Id consectetur purus ut faucibus pulvinar elementum integer enim. Donec enim diam vulputate ut
+                pharetra sit. Venenatis lectus magna fringilla urna porttitor rhoncus dolor. Aliquet lectus proin nibh
+                nisl condimentum id. </p>
         </div>
         <hr>
+
+        <!-- section4 -->
+
         <div class="section" id="section4">
-            <h1 class="title">Contact</h1>
-            <form action="mailto:dieter.van.staey@gmail.com" method="get">
+            <h1 class="title">Would you like to <span class="blueText">connect?</span></h1>
+            <form action="mailto:dieter.van.staey@gmail.com" method="POST">
                 <label for="name">Name</label><br>
                 <input type="text" name="name" id="name" placeholder="Your Name" required><br>
-                <label for="email">Name</label><br>
+                <label for="email">Email</label><br>
                 <input type="email" name="email" id="email" placeholder="email@to.me" required><br>
                 <label for="textarea">Write a message</label><br>
                 <textarea name="textarea" id="textarea" cols="40" rows="15"
@@ -87,8 +178,11 @@
 
     </main>
     <hr>
+
+    <!-- footer -->
+
     <footer>
-        <p>Website by <a href="mailto:dieter.van.Staey@gmail.com">Dieter Van Staey</a> (2019)</p>
+        <p>Website by <a href="mailto:dieter.van.Staey@gmail.com"><span class="blueText">Dieter Van Staey</span></a> (2019)</p>
     </footer>
 </body>
 

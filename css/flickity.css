@@ -46,13 +46,11 @@ https://flickity.metafizzy.co
 
 .flickity-button {
   position: absolute;
-  background: hsla(0, 0%, 100%, 0.75);
-  border: none;
-  color: #333;
+  background: transparent;
 }
 
 .flickity-button:hover {
-  background: white;
+  background: transparent;
   cursor: pointer;
 }
 
@@ -137,32 +135,5 @@ https://flickity.metafizzy.co
   opacity: 1;
 }
 
-* { box-sizing: border-box; }
 
-body { font-family: sans-serif; }
-
-.carousel {
-  width: 75%;
-  margin:auto;
-  /* background: #EEE; */
-}
-
-.carousel-cell {
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-  background: #0D0D0D;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
-}
-
-/* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
 
