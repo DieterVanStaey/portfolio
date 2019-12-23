@@ -1,0 +1,43 @@
+//https://www.tutorialspoint.com/css/css_animation_fade_in.htm
+
+(function() {
+    var backelements;
+    var elements;
+    var windowHeight;
+  
+    function init() {
+      elements = document.querySelectorAll('.hidden');
+      windowHeight = window.innerHeight;
+    }
+  
+    function checkPosition() {
+      for (var i = 0; i < elements.length; i++) {
+        var element = elements[i];
+        var positionFromTop = elements[i].getBoundingClientRect().top;
+        //console.log(elements[10].getBoundingClientRect().top)
+  
+        if (positionFromTop - windowHeight <= 0) {
+          element.classList.add('fade-in-element');
+          element.classList.remove('hidden');
+        }
+        if (positionFromTop > windowHeight || positionFromTop < 0) {
+            element.classList.add('hidden');
+            element.classList.remove('fade-in-element');
+          }
+      }
+    }
+    
+  
+    window.addEventListener('scroll', checkPosition);
+
+    window.addEventListener('resize', init);
+
+  
+    init();
+    checkPosition();
+
+  })();
+
+  
+
+ 
