@@ -20,8 +20,6 @@
     color: #0D0D0D;
 }
 
-
-
 hr {
     border-color: black;
 }
@@ -57,7 +55,6 @@ h1, h2, h3, h4 {
     font-family: 'ubuntu', sans-serif;
     color: #D2D9D8;
 }
-
 
 a {
     text-decoration: none;
@@ -130,7 +127,6 @@ a:hover {
     padding-right: 20px;
 }
 
-
 /* logo image sprite */
 
 .sprite {
@@ -151,7 +147,6 @@ a:hover {
     height: 38px;
     background-position: 0px -39.5px;
 }
-
 
 header {
     background-image: url("../assets/code_review.jpeg");
@@ -182,12 +177,12 @@ nav {
     padding: 10px;
 }
 
-
 /* section1 */
 
 #section1 {
     padding-top: 0;
 }
+
 /* flickity style */
 
 .carousel-cell {
@@ -283,31 +278,34 @@ nav {
     background-color: #83A603 !important;
 }
 
-.w3-light-grey{
+.w3-light-grey {
     background-color: #D2D9D8;
 }
-.w3-round-xlarge{
-    margin-top:10px;
+
+.w3-round-xlarge {
+    margin-top: 10px;
 }
-.progressBarContainer{
+
+.progressBarContainer {
     width: 65%;
     margin-left: auto;
     margin-right: auto;
 }
 
 /* ul style */
+
 ul {
     list-style: none;
-  }
-  
-  ul li::before {
+}
+
+ul li::before {
     content: "\2022";
     color: #83A603;
     font-weight: bold;
-    display: inline-block; 
+    display: inline-block;
     width: 1em;
     margin-left: -1em;
-  }
+}
 
 /* section4 */
 
@@ -337,26 +335,42 @@ footer {
     height: 30px;
     width: 100%;
 }
-.hidden{
+
+/* animation */
+
+.hidden {
     opacity: 0;
 }
+
 @keyframes fade-in {
-    from {opacity: 0; transform: scale(.7,.7)}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+        transform: scale(.7, .7)
+    }
+    to {
+        opacity: 1;
+    }
 }
+
 .fade-in-element {
-  animation: fade-in 1.4s;
+    animation: fade-in 1.4s;
 }
 
-.w3-animate-opacity{
-    animation:opac 3s
-}
-@keyframes opac{
-    from{opacity:0} to{opacity:1}
-    from{transform:scale(0.5)} to{transform:scale(1)}
+.w3-animate-opacity {
+    animation: opac 1.4s
 }
 
-
-
-
-
+@keyframes opac {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+    from {
+        transform: scale(0.5)
+    }
+    to {
+        transform: scale(1)
+    }
+}

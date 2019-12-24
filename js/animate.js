@@ -1,7 +1,6 @@
 //https://www.tutorialspoint.com/css/css_animation_fade_in.htm
 
 (function() {
-    var backelements;
     var elements;
     var windowHeight;
   
