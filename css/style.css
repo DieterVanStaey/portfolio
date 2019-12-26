@@ -381,3 +381,23 @@ footer {
         transform: scale(1)
     }
 }
+
+/* width */
+.historyBox::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+ .historyBox::-webkit-scrollbar-track {
+    background: white; 
+  }
+   
+  /* Handle */
+ .historyBox::-webkit-scrollbar-thumb {
+    background: #83A603; 
+  }
+  
+  /* Handle on hover */
+ .historyBox::-webkit-scrollbar-thumb:hover {
+    background: #265902; 
+  }
