@@ -130,27 +130,6 @@ h1, h2, h3, h4 {
     padding-right: 20px;
 }
 
-/* logo image sprite */
-
-.sprite {
-    background-image: url(../assets/spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
-    background-size: cover;
-}
-
-.sprite-logo5 {
-    width: 200px;
-    height: 38px;
-    background-position: 0px -0px;
-}
-
-.sprite-logo5:hover {
-    width: 200px;
-    height: 38px;
-    background-position: 0px -39.5px;
-}
-
 header {
     background-image: url("../assets/code_review.jpeg");
     min-height: 40vh;
@@ -368,6 +347,9 @@ footer {
 .w3-animate-opacity {
     animation: opac 1.4s
 }
+.smallnavcontainer{
+    display:none;
+}
 
 @keyframes opac {
     from {
@@ -384,22 +366,71 @@ footer {
     }
 }
 
-/* width */
-.historyBox::-webkit-scrollbar {
-    width: 10px;
-  }
+
   
-  /* Track */
- .historyBox::-webkit-scrollbar-track {
-    background: white; 
-  }
-   
-  /* Handle */
- .historyBox::-webkit-scrollbar-thumb {
-    background: #83A603; 
-  }
-  
-  /* Handle on hover */
- .historyBox::-webkit-scrollbar-thumb:hover {
-    background: #265902; 
+
+  @media only screen and (max-width: 800px) {
+    header {
+        background-image: url("../assets/code_review.jpeg");
+        min-height: none;
+    }
+    .headtext {
+        padding: 0px;
+    }
+    #headerTextContainer {
+        text-align: center;
+        padding-top: 200px;
+    }
+    nav {
+        display: none;
+    }
+    
+    .smallnavcontainer{
+        position:fixed;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: black;
+    }
+    .smallnav{
+        border-bottom-color: rgb(21, 54, 5);
+        border-bottom-width: 1px;
+        border-bottom-style: solid;        
+    }
+    .smallnav2, .smallnav{
+        width: 100%;
+        text-align: center;
+    }
+    #section4, #section3, #section2 {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top:200px;
+    }
+    /* #section1{
+        padding-top: 200px;
+    } */
+    .progressBarContainer {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px
+    }
+    .section {
+        padding-top: 0;
+    }
+    .curriculumDivider {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .curriculumFlex {
+        width: 100%;
+        margin: 10px;
+    }
+    .curriculumFlex50 {
+        width: 50%;
+        margin: 10px;
+    }
   }
