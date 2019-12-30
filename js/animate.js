@@ -19,10 +19,10 @@
           element.classList.add('fade-in-element');
           element.classList.remove('hidden');
         }
-        if (positionFromTop > windowHeight || positionFromTop < 0) {
-            element.classList.add('hidden');
-            element.classList.remove('fade-in-element');
-          }
+        // if (positionFromTop > windowHeight || positionFromTop < 0) {
+        //     element.classList.add('hidden');
+        //     element.classList.remove('fade-in-element');
+        //   }
       }
     }
     
