@@ -59,7 +59,7 @@ h1, h2, h3, h4 {
     color: #D2D9D8;
 }
 
-a {
+.menulink {
     text-decoration: none;
     font-family: 'ubuntu', sans-serif;
     color: #D2D9D8;
@@ -67,7 +67,7 @@ a {
     background-color: transparent;
 }
 
-a:hover {
+.menulink:hover {
     color: #83A603;
     background-color: transparent;
 }
@@ -291,12 +291,14 @@ nav {
 
 .w3-round-xlarge {
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .progressBarContainer {
     width: 65%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px
 }
 
 /* ul style */
@@ -317,7 +319,7 @@ ul li::before {
 /* section4 */
 
 #section4 {
-    width: 40%;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
 }
